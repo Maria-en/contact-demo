@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Napieralska. Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.7.1.min.js"></script>
+
+  </head>
+  <header>
+
+    <div id="myNav" class="overlay">
+      <div class="overlay-content">
+        <a class="element" href="projects.html">Projects</a>
+        <a class="element" href="resume2.html">Resume</a>
+        <a class="element" href="contact.html">Contact</a>
+      </div>
+      <div class="closing">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      </div>
+  </div>
+
+
+      <div class="corner left-top">
+      "Napierać" means to push persistently
+      </div> 
+      <span style="font-size:25px;font-family: alinsaregular; color:black; z-index:2; cursor: pointer;"onclick="openNav()">Napieralska.
+        </span>
+      <div class="corner right-top">
+          More than architectural designer
+      </div>
+    </header>
+
+
+    <body>
+      <div class="contact">
+        <div class="contact-a">
+          <h3 class="appear-first">Happy you want to reach out! I am currently based in Delft. You can also find me on <a href="https://www.linkedin.com/in/maria-napieralska-70256b251/">LinkedIn.</a>
+          </h3>
+          <div class="contact-container appear-second">
+            <form class="form-style"action="https://formsubmit.co/mariaen98@gmail.com" method="POST">
+              <div class="inputs">
+                <div class="contact-top">
+                  <input type="text" name="name" placeholder="Your full name" class="contact-input" required>
+                  <input type="email" name="email" placeholder="Your email" class="contact-input" required>
+                  <input type="text" name="subject" placeholder="Subject" class="contact-input" required>
+                </div>        
+                <textarea name="message" placeholder="Your message" class="contact-input" required></textarea>
+              </div>
+              <button class="btn yellow bigger submit" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>  
+        <div class="maria appear-first">
+          <img src="Links/Contact/Maria-contact.jpg">
+        </div>
+      </div>
+            
+        <div class="bottombar">
+          <div class="corner left-btm">
+          <br>
+          Made in Poland
+          </div>
+          <div class="copyright">
+          &copy Maria Napieralska 2024
+          </div>
+          <div class="corner right-btm">
+          <br>
+          Based in the Netherlands
+          </div>
+        </div>
+
+
+        <script>
+          function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+          } /* Open when someone clicks on the span element */
+          
+          function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+          } /* Close when someone clicks on the "x" symbol inside the overlay */
+      </script>
+
+      <!-- CONTENT REVEALING -->
+
+<script type="text/javascript">
+window.addEventListener('scroll', reveal);
+
+function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+
+    for(var i = 0; i < reveals.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 50;
+
+        if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');  
+        }
+    }
+}
+
+</script>
+
+
+    </body>
+    </html>
